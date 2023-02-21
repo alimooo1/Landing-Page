@@ -1,0 +1,291 @@
+@media screen and (max-width : 800px) {
+    div.menu {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width : 1300px) {
+    section.main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    div.image{
+        margin-top: 600px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0F0D0D;
+    width: 100%;
+    min-width: 700px;
+    height: 100vh;
+    padding: 48px 128px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 94px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30.24px;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.menu {
+    padding: 0px;
+    width: 304px;
+    height: 20px;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    list-style-position: inside;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+ul li {
+    display: inline-block;
+    width: 43px;
+    height: 20px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.search:hover {
+    cursor: pointer;
+}
+
+.circle {
+    position: absolute;
+    left: 5.21%;
+    right: 9.37%;
+    top: 5.21%;
+    bottom: 9.38%;
+}
+
+.line {
+    position: absolute;
+    left: 80.22%;
+    right: 5.22%;
+    top: 80.22%;
+    bottom: 5.21%;    
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content {
+    display: inline-block;
+    padding-top: 94px;
+    width: 547px;
+    height: 100%;
+    min-height: 500px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.title {
+    width: 547px;
+    height: 134px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 120%;    
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+h5 {
+    margin-top: 24px;
+    width: 547px;
+    height: 52px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 26px */
+    color: #BDBDBD;
+}
+
+.frames {
+    margin-top: 56px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 32px;
+    width: 172px;
+    height: 56px;
+    background: #CE643A;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-right: 16px;
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button span {
+    width: 61px;
+    height: 20px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.otherSnippets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 32px;
+    width: 265px;
+    height: 56px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+}
+
+.otherSnippets span {
+    width: 150px;
+    height: 20px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #CE643A;
+}
+
+.otherSnippets span:hover {
+    cursor: pointer;
+}
+
+.image {
+    width: 512px;
+    height: 512px;
+    display: inline-block;
+    position: relative;
+}
+
+.flash {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.flash:hover {
+    cursor: pointer;
+}
+
+.flash-line {
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    top: 1px;
+    z-index: 0;
+}
+
+.flash-dir {
+    position: absolute;
+    left: 50%;
+    margin-left: -9.9px;
+    top: 57.01%;
+    z-index: 1;
+}
+
+.eclipse {
+    position: absolute;
+    width: 448px;
+    height: 448px;
+    right: 0px;
+    top: 30px;
+    background: rgba(206, 100, 58, 0.082);
+    filter: blur(100px);
+}
+
+.top-eclipse {
+    position: absolute;
+    width: 448px;
+    height: 448px;
+    left: 0px;
+    top: 0px;
+    background: rgba(206, 100, 58, 0.082);
+    filter: blur(100px);
+}
