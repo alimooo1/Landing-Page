@@ -129,6 +129,7 @@ ul li {
 
 ul li:hover {
     cursor: pointer;
+    color: #CE643A;
 }
 
 .search {
@@ -214,6 +215,7 @@ h5 {
 
 .button:hover {
     cursor: pointer;
+    background-color: #d44a14;
 }
 
 .button span {
@@ -256,6 +258,7 @@ h5 {
 
 .otherSnippets span:hover {
     cursor: pointer;
+    color: #d44a14;
 }
 
 .main-image {
