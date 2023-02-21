@@ -1,6 +1,32 @@
 @media screen and (max-width : 800px) {
     div.menu {
-        width: 230px;
+        display: none;
+    }
+
+    div.respansive-burger {
+        display: block;
+    }
+
+    body.body {
+        padding: 10px 20px;
+    }
+
+    div.content {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    div.main-image {
+        width: 100%;
+    }
+
+    div.button , div.otherSnippets {
+        width: 100%;
+    }
+
+    div.button {
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 }
 
@@ -10,8 +36,14 @@
         justify-content: center;
         align-items: center;
     }
-    div.image{
-        margin-top: 600px;
+
+    body.body {
+        height: 100%;
+    }
+
+    img.top-eclipse {
+        display: none;
+        visibility: hidden;
     }
 }
 
@@ -23,7 +55,6 @@
 body {
     background-color: #0F0D0D;
     width: 100%;
-    min-width: 700px;
     height: 100vh;
     padding: 48px 128px;
     box-sizing: border-box;
@@ -101,7 +132,6 @@ ul li:hover {
 }
 
 .search {
-    position: relative;
     width: 20px;
     height: 20px;
 }
@@ -110,20 +140,14 @@ ul li:hover {
     cursor: pointer;
 }
 
-.circle {
-    position: absolute;
-    left: 5.21%;
-    right: 9.37%;
-    top: 5.21%;
-    bottom: 9.38%;
+.respansive-burger {
+    display: none;
+    color: #FFFFFF;
+    font-size: 22px;
 }
 
-.line {
-    position: absolute;
-    left: 80.22%;
-    right: 5.22%;
-    top: 80.22%;
-    bottom: 5.21%;    
+.respansive-burger i:hover {
+    cursor: pointer;
 }
 
 section {
@@ -140,14 +164,12 @@ section {
     padding-top: 94px;
     width: 547px;
     height: 100%;
-    min-height: 500px;
     box-sizing: border-box;
     position: relative;
 }
 
 .title {
-    width: 547px;
-    height: 134px;
+    width: 100%;
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 900;
@@ -159,19 +181,20 @@ section {
 
 h5 {
     margin-top: 24px;
-    width: 547px;
-    height: 52px;
+    width: 100%;
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    /* or 26px */
     color: #BDBDBD;
 }
 
 .frames {
     margin-top: 56px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -194,7 +217,7 @@ h5 {
 }
 
 .button span {
-    width: 61px;
+    width: 100%;
     height: 20px;
     font-family: 'Outfit';
     font-style: normal;
@@ -220,7 +243,7 @@ h5 {
 }
 
 .otherSnippets span {
-    width: 150px;
+    width: 100%;
     height: 20px;
     font-family: 'Outfit';
     font-style: normal;
@@ -235,48 +258,30 @@ h5 {
     cursor: pointer;
 }
 
-.image {
+.main-image {
     width: 512px;
-    height: 512px;
     display: inline-block;
     position: relative;
+}
+
+.main-image img {
+    width: 100%;
 }
 
 .flash {
     width: 32px;
     height: 32px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
 }
 
 .flash:hover {
     cursor: pointer;
 }
 
-.flash-line {
-    position: absolute;
-    left: 50%;
-    margin-left: -1px;
-    top: 1px;
-    z-index: 0;
-}
-
-.flash-dir {
-    position: absolute;
-    left: 50%;
-    margin-left: -9.9px;
-    top: 57.01%;
-    z-index: 1;
-}
-
 .eclipse {
     position: absolute;
-    width: 448px;
-    height: 448px;
     right: 0px;
     top: 30px;
-    background: rgba(206, 100, 58, 0.082);
+    background: rgba(206, 100, 58, 0.1);
     filter: blur(100px);
 }
 
@@ -286,6 +291,11 @@ h5 {
     height: 448px;
     left: 0px;
     top: 0px;
-    background: rgba(206, 100, 58, 0.082);
+    background: rgba(206, 100, 58, 0.1);
     filter: blur(100px);
+}
+
+footer {
+    width: 100%;
+    height: 32px;
 }
